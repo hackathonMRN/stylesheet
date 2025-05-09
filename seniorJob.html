@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior Job Finder</title>
+    <link href="style.css" rel="stylesheet">
+    <!-- <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2rem;
+        }
+
+        .title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .input-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .input-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            padding: 0.75rem;
+            background-color: #3453f3;
+            color: white;
+            font-weight: 600;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .button:disabled {
+            background-color: #aaa;
+        }
+
+        .question {
+            margin: 1rem 0;
+        }
+
+        .question p {
+            margin-bottom: 0.5rem;
+        }
+
+        .option {
+            display: block;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+        }
+
+        .option:hover {
+            background-color: #e6e9ff;
+        }
+    </style> -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="title">Welcome to Senior Job Finder</div>
+            <div class="input-group">
+                <label class="input-label" for="name">Your Name</label>
+                <input type="text" id="name" placeholder="e.g., Kim Jihoon">
+            </div>
+            <div class="input-group">
+                <label class="input-label" for="email">Email Address</label>
+                <input type="email" id="email" placeholder="e.g., kim@email.com">
+            </div>
+            <button class="button" onclick="startQuestions()">Start Questionnaire</button>
+        </div>
+
+        <div class="card" id="questionnaire" style="display: none;">
+            <div class="title">What kind of activity do you prefer?</div>
+            <div class="question">
+                <p>Select an option:</p>
+                <div class="option">Indoor tasks like paperwork or phone calls</div>
+                <div class="option">Outdoor work like gardening or delivery</div>
+                <div class="option">Helping others, e.g., volunteering</div>
+                <div class="option">Working with children or animals</div>
+            </div>
+            <button class="button">Next</button>
+        </div>
+    </div>
+
+    <script>
+        function startQuestions() {
+            document.getElementById("questionnaire").style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
