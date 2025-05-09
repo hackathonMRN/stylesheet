@@ -1,0 +1,44 @@
+/* Result 페이지 전체 컨테이너 */
+.result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+/* 제목 스타일 */
+.result-container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* 결과 리스트 스타일 */
+.result-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* 리스트 아이템 스타일 */
+.result-container ul li {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    color: #555;
+}
+
+/* 질문 텍스트 강조 */
+.result-container ul li strong {
+    font-weight: bold;
+    color: #000;
+}
